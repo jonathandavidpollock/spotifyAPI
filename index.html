@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Document</title> 
 </head>
 <body>
 	<section>
@@ -15,22 +15,25 @@
 			</ul>
 		</nav>
 		<form action="">
-			<p><label for="searchBox"></label></p>
-			<p><input type="text" id="searchBox" name="searchBox" placeholder="ex. Foo Fighters"></p>
-			<p><button type="Submit">Submit</button></p>
+			<p><input class="js-search-field" type="text" name="searchBox" placeholder="ex. Foo Fighters"></p>
+			<p><button class="js-search-button">Submit</button></p>
 		</form>
 	</section>
 	<section>
 		<h2>Results For Foo Fighters</h2>
-		<article>
-			<img src="http://www.placehold.it/300x300?text=Album+Artwork" alt="Placeholder Image">
-			<h3>Album Name</h3>
-			<p>Artist name</p>
-		</article>
+
+		<ul class="results">
+			<li>
+				<img src="http://www.placehold.it/300x300?text=Album+Artwork" alt="Placeholder Image">
+				<h3>Album Name</h3>
+				<p>Artist name</p>
+			</li>
+		</ul>
 
 	</section>
 	<section>
 		<h4>Built by Jonathan Pollock for DWS2</h4>
 	</section>
+	<script src='./js/main.js'></script>
 </body>
 </html>

@@ -1,5 +1,6 @@
-$primary-color: red;
+@import ('./Variables/variables');
+@import ('./Typography/typo');
+@import ('./Mixins/mixins');
+@import ('./Placeholder/placeholders');
 
-p {
-	color: $primary-color;
-}
+
