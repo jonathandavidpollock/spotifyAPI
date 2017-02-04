@@ -1,2 +1,205 @@
+/* CSS RESET
+==================================================================================================== 
+====================================================================================================
+*/
+html, body, div, main, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, button,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, input, textarea,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video,
+::before, ::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+  box-sizing: border-box; }
+
+/* HTML5 - Older browser support
+====================================================================== */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/* BODY
+====================================================================== */
+body {
+  line-height: 1; }
+
+/* LISTS - Clear bullets
+====================================================================== */
+ol, ul {
+  list-style: none; }
+
+/* QUOTES
+====================================================================== */
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+/* TABLES
+====================================================================== */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+input[name="searchBox"], section, .wrapper, .viewMoreBtn {
+  margin-left: auto;
+  margin-right: auto; }
+
+html {
+  font-size: 62.5%;
+  font-family: "Helvetica Nue", Helvetica, Arial, sans-serif; }
+
+body {
+  font: 1.6rem/1.25 "Program OT", arial, sans-serif;
+  color: #888; }
+
+h1 {
+  font-size: 4.4rem; }
+
+h2 {
+  font-size: 3.3rem;
+  padding-left: .4rem;
+  color: #fff;
+  background-color: #2b2b2b;
+  width: 470px;
+  margin-top: 5rem;
+  padding-bottom: .7rem; }
+
+h3 {
+  font-size: 2.2rem;
+  color: #f5a623;
+  padding: 1rem 1rem 0.5rem 1rem; }
+
+h4 {
+  font-size: 1.8rem;
+  padding: .4rem;
+  color: #fff; }
+
 p {
-  color: red; }
+  font-size: 1.6rem;
+  color: #aaaaab;
+  padding-left: 1rem; }
+
+a {
+  cursor: pointer;
+  color: #aaaaab;
+  font-size: 2.2rem; }
+  a:hover {
+    color: #f5a623; }
+
+header {
+  background-image: url("../assets/concert-photo.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  height: 400px; }
+
+nav {
+  background: linear-gradient(to bottom, #2b2b2b, transparent);
+  height: 60px; }
+  nav li {
+    display: inline-block;
+    float: left; }
+    nav li a {
+      padding: 3rem; }
+
+nav::after {
+  content: "";
+  display: block;
+  clear: both; }
+
+input[name="searchBox"] {
+  width: 860px;
+  height: 80px;
+  padding-left: 1rem;
+  font-size: 1.8rem;
+  background-color: #d8d8d8;
+  box-shadow: 10px 10px 5px #111; }
+
+:placeholder-shown {
+  padding-left: 1rem;
+  font-size: 1.8rem;
+  color: #bababa; }
+
+header button {
+  height: 80px;
+  padding-left: 5rem;
+  padding-right: 5rem; }
+
+section {
+  padding-bottom: 10rem;
+  max-width: 1200px; }
+
+section li {
+  width: calc(100%/3 - .6rem);
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  float: left; }
+
+section::after {
+  display: block;
+  content: "";
+  clear: both; }
+
+.searchDescription {
+  background-color: #010101;
+  margin-top: 100px;
+  width: 400px; }
+  .searchDescription::placeholder {
+    padding-left: 1rem; }
+
+header button {
+  box-shadow: 10px 10px 5px #111;
+  text-indent: -9999px;
+  background-image: url("../assets/search.png");
+  background-repeat: no-repeat;
+  background-position: center; }
+
+footer {
+  background-color: #2b2b2b;
+  padding: 5rem;
+  text-align: center;
+  color: #c9c9c9; }
+
+.container {
+  background-color: #2b2b2b;
+  width: 300px; }
+
+.container p {
+  padding: 0 1rem 1rem 1rem; }
+
+.wrapper {
+  max-width: 1200px; }
+
+.viewMoreBtn {
+  color: #2b2b2b;
+  background-color: #f5a623;
+  font-size: 2.2rem;
+  font-weight: bold;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  text-align: center;
+  margin-top: 10rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  max-width: 300px; }
