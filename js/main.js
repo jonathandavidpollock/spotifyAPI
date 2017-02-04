@@ -2,6 +2,7 @@ var searchField = document.querySelector('.js-search-field');
 var button = document.querySelector('.js-search-button');
 var resultEl = document.querySelector('.results');
 var searchSpot = document.querySelector('.searchText');
+var sct = document.querySelector('.mainSection');
 
 button.addEventListener('click', function(e){
 	e.preventDefault();
@@ -45,6 +46,11 @@ function makeRequest(url) {
 }
 
 function renderPage(results) {
+
+	searchSpot.innerHTML = 'Results for ' + searchField.value;
+	console.log(searchSpot);
+
+
 	results.forEach( (result, index, array) => {
 		var listItem = document.createElement('li');
 		var textNode = '<img src="' + result.images[1].url + '" />';
@@ -56,4 +62,5 @@ function renderPage(results) {
 		textNode = '';
 	})
 	resultEl.insertAdjacentHTML('beforeend','<p class="btnContainer"><button class="viewMoreBtn">View More On Spotify</button></p>');
+	sct.insertBefore(searchSpot, sct.firstChild);
 }
