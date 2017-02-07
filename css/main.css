@@ -161,6 +161,12 @@ section::after {
   background-color: #010101;
   margin-top: 100px;
   width: 400px; }
+  .searchDescription::-webkit-input-placeholder {
+    padding-left: 1rem; }
+  .searchDescription::-moz-placeholder {
+    padding-left: 1rem; }
+  .searchDescription:-ms-input-placeholder {
+    padding-left: 1rem; }
   .searchDescription::placeholder {
     padding-left: 1rem; }
 
@@ -203,3 +209,8 @@ footer {
   border-bottom-left-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
   max-width: 300px; }
+
+input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; }
