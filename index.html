@@ -1,44 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title> 
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="./css/main.css">
-</head>
-<body>
-	<header>
-		<nav>
-			<div class="wrapper">	
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="./css/main.css">
+	</head>
+	<body>
+		<header>
+			<nav>
+					<figure>
+						<img src="../assets/turntable.png" alt="main Logo">
+						<h1>Chansons</h1>
+					</figure>
+					<div class="wrapButton">
+						<div id="hamburger">
+						<button id="el"></button>
+					</div>
+					</div>
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
+				<form action="GET">
+					<p><label for="search" class="searchDescription">Search for albums from your favorite band</label>
+					</p>
+					<p>
+					<input class="js-search-field" type="text" name="searchBox" id="search"placeholder="ex. Foo Fighters"><button class="js-search-button">Submit</button></p>
+				</form>
 			</div>
-		</nav>
-		<div class="wrapper">
-		<form action="GET">
-			<h4 class="searchDescription">Search for albums from your favorite band</h4>
-			<p><input class="js-search-field" type="text" name="searchBox" placeholder="ex. Foo Fighters"><button class="js-search-button">Submit</button></p>
-		</form>
-		</div>
-	</header>
-	<section class="mainSection">
-		<h2 class="searchText">Results For Foo Fighters</h2>
-
-		<ul class="results">
-			<li>
-				<img src="http://www.placehold.it/300x300?text=Album+Artwork" alt="Placeholder Image">
-				<h3>Album Name</h3>
-				<p>Artist name</p>
-			</li>
-		</ul>
-
-	</section>
-	<footer>
-		<h4>Built by Jonathan Pollock for DWS2</h4>
-	</footer>
-	<script src='./js/main.js'></script>
-</body>
+		</header>
+		<section class="mainSection">
+			<h2 class="searchText">Results For Foo Fighters</h2>
+			<ul class="results">
+				<li>
+					<img src="http://www.placehold.it/300x300?text=Album+Artwork" alt="Placeholder Image" />
+					<h3>Album Name</h3>
+					<p>Artist name</p>
+				</li>
+			</ul>
+		</section>
+		<footer>
+			<h3>Built by Jonathan Pollock for DWS2</h3>
+		</footer>
+		<script src='./js/main.js'></script>
+	</body>
 </html>

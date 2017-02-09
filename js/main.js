@@ -64,3 +64,21 @@ function renderPage(results) {
 	resultEl.insertAdjacentHTML('beforeend','<p class="btnContainer"><button class="viewMoreBtn">View More On Spotify</button></p>');
 	sct.insertBefore(searchSpot, sct.firstChild);
 }
+
+
+// Hamburger Button Toggle Actions
+var el = document.querySelector('#hamburger');
+var menu = document.querySelector('nav ul');
+var header = document.querySelector('header');
+var form = document.querySelector('form');
+
+el.addEventListener("click", function(){
+  	this.classList.toggle('active');
+  	header.classList.toggle('headerMenu');
+  	menu.classList.toggle('ulMenu');
+  	form.classList.toggle('hideForm');
+})
+
+
+
+
