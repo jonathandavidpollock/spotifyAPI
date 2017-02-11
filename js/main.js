@@ -76,6 +76,8 @@ switch(currentPage) {
    	console.log(currentPage);
 }
 
+
+
 // Hamburger Button Toggle Actions
 var el = document.querySelector('#hamburger');
 var navigation = document.querySelector('nav');
@@ -84,7 +86,7 @@ var header = document.querySelector('header');
 var form = document.querySelector('form');
 var fig = document.querySelector('figure');
 var aref = document.querySelector('a');
-var footer = document.querySelector('footer');
+var foot = document.querySelector('footer');
 
 el.addEventListener("click", function(){
   	this.classList.toggle('active');
@@ -93,7 +95,7 @@ el.addEventListener("click", function(){
   	menu.classList.toggle('ulMenu');
   	form.classList.toggle('hide');
   	fig.classList.toggle('hide');
-  	footer.className = '';
+  	foot.classList.toggle('removeFixed');
 })
 
 
