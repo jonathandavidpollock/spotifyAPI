@@ -7,7 +7,7 @@ $white: #ffffff;
 $font-stack: "PT Sans", Helvetica, Arial, sans-serif;
 
 // Mixins
-$tablet: "screen and (min-width: 500px) and (max-width: 649px)";
-$medium-tablet: "screen and (min-width: 650px) and (max-width: 999px)";
-$desktop: "screen and (min-width: 1000px)";
+$medium: "screen and (min-width: 500px) and (max-width: 649px)";
+$large: "screen and (min-width: 650px) and (max-width: 999px)";
+$extra-large: "screen and (min-width: 1000px)";
 
