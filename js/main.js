@@ -68,7 +68,7 @@ function renderPage(results) {
 
 
 var currentPage = window.location.pathname;
-var home = document.querySelector('a[href="/"]');
+var home = document.querySelector('a[href="/spotifyAPI/"]');
 switch(currentPage) {
    case "/" :
        home.classList.add('current');

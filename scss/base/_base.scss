@@ -161,6 +161,9 @@ form {
     button {
       margin:5rem 0;
       @extend %button;
+      &:hover {
+        transform: scale(1.1);
+      }
     }
 }
 

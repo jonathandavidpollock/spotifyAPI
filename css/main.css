@@ -66,7 +66,9 @@ form div, label, section {
   padding: 1.5rem 6rem;
   background-color: #f5a623;
   border-radius: .5rem;
-  font-weight: bold; }
+  font-weight: bold;
+  transition: .5s;
+  cursor: pointer; }
 
 html {
   font-size: 62.5%; }
@@ -244,6 +246,8 @@ footer {
       justify-content: center; }
   .btnContainer button {
     margin: 5rem 0; }
+    .btnContainer button:hover {
+      transform: scale(1.1); }
 
 figure {
   margin: 0;
@@ -262,7 +266,9 @@ section {
 section li {
   display: -ms-flexbox;
   display: flex;
-  margin-top: .5rem; }
+  margin-top: .5rem;
+  margin-right: .5rem;
+  margin-left: .5rem; }
   section li img {
     height: 10rem; }
   section li h3, section li p {
