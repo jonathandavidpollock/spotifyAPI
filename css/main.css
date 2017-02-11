@@ -332,9 +332,12 @@ section li {
       .results li:nth-child(9) {
         display: none; }
   .btnContainer button {
-    width: 400px; }
+    width: 400px;
+    margin-left: 2rem;
+    margin-right: 2rem; }
   .container {
-    width: 300px; } }
+    width: 300px;
+    height: 10rem; } }
 
 @media screen and (min-width: 1000px) {
   .mainSection h2 {
