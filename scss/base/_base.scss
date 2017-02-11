@@ -65,11 +65,14 @@
 
 .show {
   padding:10rem;
-  margin-top: 2rem;
-  margin-bottom:2rem;
+  margin-top: 9rem;
+  margin-bottom:9rem;
   background: url('../assets/audio.png') center center no-repeat;
   background-size: 25%;
   opacity: .05;
+  &:active {
+    display:none;
+  }
 }
 
 header {
@@ -193,6 +196,7 @@ section li {
 .container {
   background-color:$dark-grey;
   width:100%;
+  padding-right: 2rem;
 }
 
 .hide {
@@ -233,7 +237,7 @@ section li {
   width: 33.3%;
 }
 
-@media screen and (min-width: 500px) and (max-width: 649px) {
+@media #{$tablet} {
   .mainSection {
     li {
       max-width: 600px;
@@ -251,7 +255,7 @@ section li {
   }
 }
 
-@media screen and (min-width: 650px) and (max-width: 999px) {
+@media #{$medium-tablet} {
    .results {
       display: flex;
       flex-wrap:wrap;
@@ -271,10 +275,20 @@ section li {
       }
 }
 
-@media screen and (min-width: 1000px) {
+@media #{$desktop} {
   .mainSection h2 {
     margin-bottom: 1rem;
   } 
+
+  label {
+    text-align: left;
+    font-size: 1.4rem;
+  }
+
+  form {
+    margin-bottom: 3rem;
+  }
+
   nav ul {
     display:block;
     padding-right: 12rem;

@@ -3,6 +3,7 @@ var button = document.querySelector('.js-search-button');
 var resultEl = document.querySelector('.results');
 var searchSpot = document.querySelector('.searchText');
 var sct = document.querySelector('.mainSection');
+var dv = document.querySelector('.show');
 
 button.addEventListener('click', function(e){
 	e.preventDefault();
@@ -46,7 +47,7 @@ function makeRequest(url) {
 }
 
 function renderPage(results) {
-
+	dv.style.display = 'none';
 	searchSpot.innerHTML = 'Results for ' + searchField.value;
 	console.log(searchSpot);
 
@@ -86,7 +87,6 @@ var header = document.querySelector('header');
 var form = document.querySelector('form');
 var fig = document.querySelector('figure');
 var aref = document.querySelector('a');
-var foot = document.querySelector('footer');
 
 el.addEventListener("click", function(){
   	this.classList.toggle('active');
@@ -95,7 +95,6 @@ el.addEventListener("click", function(){
   	menu.classList.toggle('ulMenu');
   	form.classList.toggle('hide');
   	fig.classList.toggle('hide');
-  	foot.classList.toggle('removeFixed');
 })
 
 
