@@ -70,7 +70,7 @@
   background: url('../assets/audio.png') center center no-repeat;
   background-size: 25%;
   opacity: .05;
-  &:active {
+  &.active {
     display:none;
   }
 }

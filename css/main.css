@@ -165,7 +165,7 @@ label {
   background: url("../assets/audio.png") center center no-repeat;
   background-size: 25%;
   opacity: .05; }
-  .show:active {
+  .show.active {
     display: none; }
 
 header {
