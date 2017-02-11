@@ -66,17 +66,34 @@ function renderPage(results) {
 }
 
 
+var currentPage = window.location.pathname;
+var home = document.querySelector('a[href="/"]');
+switch(currentPage) {
+   case "/" :
+       home.classList.add('current');
+       break;
+   default: 
+   	console.log(currentPage);
+}
+
 // Hamburger Button Toggle Actions
 var el = document.querySelector('#hamburger');
+var navigation = document.querySelector('nav');
 var menu = document.querySelector('nav ul');
 var header = document.querySelector('header');
 var form = document.querySelector('form');
+var fig = document.querySelector('figure');
+var aref = document.querySelector('a');
+var footer = document.querySelector('footer');
 
 el.addEventListener("click", function(){
   	this.classList.toggle('active');
+  	navigation.classList.toggle('active');
   	header.classList.toggle('headerMenu');
   	menu.classList.toggle('ulMenu');
-  	form.classList.toggle('hideForm');
+  	form.classList.toggle('hide');
+  	fig.classList.toggle('hide');
+  	footer.className = '';
 })
 
 

@@ -9,43 +9,40 @@
 	<body>
 		<header>
 			<nav>
-					<figure>
-						<img src="../assets/turntable.png" alt="main Logo">
-						<h1>Chansons</h1>
-					</figure>
-					<div class="wrapButton">
-						<div id="hamburger">
+				<figure>
+					<img src="../assets/turntable.png" alt="main Logo">
+					<h1>Chansons</h1>
+				</figure>
+				<div class="wrapButton">
+					<div id="hamburger">
 						<button id="el"></button>
 					</div>
-					</div>
-					<ul>
-						<li><a href="#">Home</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Contact</a></li>
-					</ul>
 				</div>
-			</nav>
-				<form action="GET">
-					<p><label for="search" class="searchDescription">Search for albums from your favorite band</label>
-					</p>
-					<p>
-					<input class="js-search-field" type="text" name="searchBox" id="search"placeholder="ex. Foo Fighters"><button class="js-search-button">Submit</button></p>
-				</form>
+				<ul>
+					<li><a href="/">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
 			</div>
-		</header>
-		<section class="mainSection">
-			<h2 class="searchText">Results For Foo Fighters</h2>
-			<ul class="results">
-				<li>
-					<img src="http://www.placehold.it/300x300?text=Album+Artwork" alt="Placeholder Image" />
-					<h3>Album Name</h3>
-					<p>Artist name</p>
-				</li>
-			</ul>
-		</section>
-		<footer>
-			<h3>Built by Jonathan Pollock for DWS2</h3>
-		</footer>
-		<script src='./js/main.js'></script>
-	</body>
+		</nav>
+		<form action="GET">
+			<label for="search">Search for albums from your favorite band</label>			
+			<div class="input-wrapper">
+				<input class="js-search-field" type="text" name="searchBox" id="search" placeholder="ex. Foo Fighters">
+				<button class="js-search-button">Submit</button>
+			</div>
+		</form>
+	</div>
+</header>
+<section class="mainSection">
+	<h2 class="searchText">Results For Foo Fighters</h2>
+	<ul class="results">
+		<div class="show"></div>
+	</ul>
+</section>
+<footer class="fix-position">
+	<h2>Built by Jonathan Pollock for DWS2</h2>
+</footer>
+<script src='./js/main.js'></script>
+</body>
 </html>

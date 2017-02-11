@@ -2,6 +2,7 @@
 ==================================================================================================== 
 ====================================================================================================
 */
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700");
 html, body, div, main, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre, button,
 a, abbr, acronym, address, big, cite, code,
@@ -57,12 +58,20 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+form div, label, section {
+  margin-left: auto;
+  margin-right: auto; }
+
+.btnContainer button {
+  padding: 1.5rem 6rem;
+  background-color: #f5a623;
+  border-radius: .5rem; }
+
 html {
-  font-size: 62.5%;
-  font-family: "Helvetica Nue", Helvetica, Arial, sans-serif; }
+  font-size: 62.5%; }
 
 body {
-  font: 1.6rem/1.25 "Program OT", arial, sans-serif;
+  font: 1.6rem/1.25 "PT Sans", sans-serif;
   color: #888; }
 
 h1 {
@@ -76,12 +85,20 @@ h2 {
   font-weight: bold;
   font-size: 2rem; }
 
+h3, .current {
+  color: #f5a623; }
+
 a {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   color: #fff;
-  padding-bottom: 4rem; }
+  padding-bottom: 1.6rem;
+  display: block;
+  margin-top: 1.6rem; }
+  a.active {
+    color: #f5a623; }
 
 label {
+  font-size: 1.2rem;
   padding: .5rem; }
 
 #hamburger {
@@ -113,6 +130,7 @@ label {
       outline: 0px;
       border: 0px; }
     #hamburger #el::after, #hamburger #el::before {
+      z-index: 3;
       display: block;
       content: "";
       position: absolute;
@@ -137,6 +155,14 @@ label {
       #hamburger.active #el:before {
         transform: rotate(135deg) translate(-10px, 10px) scale(1.2, 1.2); }
 
+.show {
+  padding: 10rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background: url("../assets/audio.png") center center no-repeat;
+  background-size: 25%;
+  opacity: .05; }
+
 header {
   background-image: url("../assets/concert-photo.jpg");
   background-position: center;
@@ -144,7 +170,20 @@ header {
   padding-bottom: 2rem; }
 
 nav {
-  background: linear-gradient(#2c2c2c, transparent); }
+  background: linear-gradient(#2c2c2c, transparent);
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin-bottom: 5rem; }
+  nav.active {
+    background: linear-gradient(#2c2c2c, #2c2c2c);
+    padding-bottom: 5rem;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    margin-bottom: 5rem; }
 
 nav ul {
   display: none; }
@@ -154,46 +193,86 @@ nav li {
   padding-right: 1rem; }
 
 form {
-  width: 90%;
+  margin-bottom: 5rem;
+  max-width: 865px;
   margin: auto; }
+  form div {
+    position: relative;
+    background-color: #d8d8d8;
+    width: 80%; }
+  form input, form button {
+    height: 60px;
+    -ms-flex-pack: center;
+        justify-content: center;
+    background-color: transparent;
+    outline: none; }
+  form input {
+    width: 80%;
+    padding: 0 2rem 0 1rem; }
+  form button {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 1rem;
+    background: url("../assets/search.png") right center no-repeat;
+    background-size: contain;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 20%; }
 
-form p {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  height: 50px; }
+label {
+  width: 80%;
+  display: block;
+  text-align: center;
+  background-color: #2c2c2c;
+  color: #ffffff; }
 
-p input {
-  background-color: #d8d8d8; }
+footer {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #2c2c2c;
+  text-align: center; }
 
-p button {
-  background-image: url("../assets/search.png");
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 15%;
-  background-repeat: no-repeat; }
-
-figure {
+.btnContainer {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
       justify-content: center; }
+  .btnContainer button {
+    margin: 5rem 0; }
 
-::-webkit-input-placeholder {
-  padding-left: 1rem; }
+figure {
+  margin: 0;
+  width: 33.33333%;
+  margin-left: 33.33333%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
 
-::-moz-placeholder {
-  padding-left: 1rem; }
+section {
+  max-width: 1000px; }
 
-:-ms-input-placeholder {
-  padding-left: 1rem; }
+section li {
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: .5rem; }
+  section li img {
+    height: 10rem; }
+  section li h3, section li p {
+    padding-left: 1rem; }
+  section li h3 {
+    padding-top: 2rem;
+    font-weight: bold; }
 
-::placeholder {
-  padding-left: 1rem; }
+.container {
+  background-color: #2c2c2c;
+  width: 100%; }
 
-.hideForm {
+.hide {
   display: none; }
 
 .mainSection h2 {
@@ -201,8 +280,12 @@ figure {
   padding: 1rem;
   color: #ffffff; }
 
-.headerMenu {
+.underlay {
   background-color: #2c2c2c;
+  padding-bottom: 2rem;
+  display: block; }
+
+.headerMenu {
   background-image: none; }
 
 .ulMenu {
@@ -216,8 +299,46 @@ figure {
 
 .searchDescription {
   background-color: #2c2c2c;
-  color: white;
-  width: 80%; }
+  color: white; }
 
 .wrapBurger {
   width: 33.3%; }
+
+@media screen and (min-width: 500px) and (max-width: 649px) {
+  .mainSection li {
+    max-width: 600px;
+    margin: 2rem auto; }
+  .mainSection img {
+    height: 20rem; }
+  .mainSection h3 {
+    font-size: 3.3rem; }
+  .mainSection p {
+    font-size: 2.2rem; } }
+
+@media screen and (min-width: 1000px) {
+  nav ul {
+    display: block;
+    padding-right: 12rem;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  nav figure {
+    margin-left: 0; }
+  nav li {
+    display: inline-block;
+    padding-right: 2rem; }
+  section li {
+    display: inline-block;
+    margin-top: .5rem;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-right: 5rem; }
+    section li h3 {
+      padding-top: 1rem; }
+    section li img {
+      height: 100%; }
+    section li:nth-child(3n) {
+      margin-right: 0; }
+  #hamburger {
+    display: none; } }
